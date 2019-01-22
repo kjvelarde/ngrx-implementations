@@ -1,0 +1,16 @@
+<div class="container" *ngIf="!isLoading; else loading">
+  <div *ngFor="let videogame of videogames">
+    <h3>{{ videogame.title }}</h3>
+    <h5>{{ videogame.year }}</h5>
+    <img [src]="videogame.posterUrl" class="poster" />
+  </div>
+</div>
+<ng-template #loading>
+  <div class="container loading">
+    <div class="loader triangle">
+      <svg viewBox="0 0 86 80">
+        <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+    </div>
+  </div>
+</ng-template>

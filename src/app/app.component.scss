@@ -1,0 +1,9 @@
+:host() {
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  padding-top: 10vh;
+  grid-template-rows: 30vh 30vh 30vh;
+}
